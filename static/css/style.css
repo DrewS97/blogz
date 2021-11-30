@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(255,155,29);
+    text-align: center;
+  }
+  
+  .banner {
+    border: 0;
+    height: 23px;
+    background-image: url(../images/cartoonPumpkin.png);
+    background-repeat: repeat-x;
+    background-size: 24px 24px;
+    overflow: hidden;
+  }
+  
+  h1 {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  h2 {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  form {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: black;
+    width: 60%;
+    color: white;
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .subButton {
+    margin: 10px 0px;
+    padding: 5px;
+    color: black;
+    background-color: white;
+  }
+  
+  input[type=text] {
+    width: 90%;
+    margin: 5px 0px;
+    border: solid black 2px;
+  }
+  
+  textarea {
+    width: 90%;
+    height: auto;
+    margin: 5px 0px;
+    border: solid black 2px;
+    white-space: normal;
+    overflow-wrap: normal;
+    overflow-y: scroll;
+  }
+  
+  input[type=password] {
+    width: 50%;
+    margin: 5px 0px;
+  }
+  
+  a {
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    margin: 10px, 10px, 10px, 10px;
+    background-color: black;
+    display: inline-block;
+  }
+  
+  .post {
+    text-align: left;
+    position: relative;
+    left: 25%;
+    width: 50%;
+    border: solid black 3px;
+    background-color: black;
+    color: white;
+  }
+  
+  .content {
+    left: 5%;
+    margin: 5%;
+  }
+  
+  .title {
+    text-decoration: none;
+  }

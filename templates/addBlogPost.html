@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Blog Post</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <a href="http://127.0.0.1:5000/">Main Blog Page</a>
+    <a href="http://127.0.0.1:5000/addBlogPost">Add Blog Post</a>
+
+    <hr class="banner">
+    <div>
+      <h1>-The Blogger-</h1>
+      <h2><i>(Halloween Edition)</i></h2>
+    <div>
+    <hr class="banner">
+    
+
+    <h2>Create New Post</h2> 
+    <br>
+    <br>
+    
+    <form action="http://127.0.0.1:5000/addBlogPost" method="post" id="addPost">
+      <p>Post Title:</p>
+      <input type="text" name="Post Title"></input>
+      <br>
+
+      <p>Post Content:</p>
+      <textarea form="addPost" name="Post Content" cols="50" wrap="hard">{{error}}</textarea>
+      <br>
+
+      <input type="submit" class="subButton" value="Add Post"></input>
+    </form>
+    <br>
+    <br>
+
+    <script src="app.py"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Build a Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  </head>
+  <body>
+    <a href="http://127.0.0.1:5000/">Main Blog Page</a>
+    <a href="http://127.0.0.1:5000/addBlogPost">Add Blog Post</a>
+    
+    <hr class="banner">
+    <h1>Welcome To -The Blogger-</h1>
+    <h2><i>(Halloween Edition)</i></h2>
+    <hr class="banner">
+
+    <h2>Your post was added</h2>
+    
+    <div class="post">
+      <a href="http://127.0.0.1:5000/">
+        <h3 class="title"><strong>--- {{title}} ---</strong></h3>
+      </a>
+      <hr>
+      <p class="content">{{content}}<hr></p>
+    </div>
+
+    <h2><a href="http://127.0.0.1:5000/">Return To Feed</a></h2>
+
+    <script src="app.py"></script>
+  </body>
+</html>
